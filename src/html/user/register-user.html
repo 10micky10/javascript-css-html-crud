@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register User</title>
+    <link rel="stylesheet" href="..\..\css/register.css"/>
+    <script src = "..\..\javascript/ultil-local-storage.js"></script>
+    <script src = "..\..\javascript/register-user.js"></script>
+  </head>
+  <body onload="uploadFormRegisterIfEdit()">
+    <h1 id="h1-title">REGISTER USER</h1>
+    <nav class="menu">
+      <div class="options">
+        <a href="..\..\..\index.html">Home</a>
+        <a href="menu-user.html">Menu User</a>
+        <a href="show-table-user.html">Show</a>
+      </div>
+    </nav>
+    <section class="form-register">
+      <h2>Register User</h2>
+      <form onsubmit="event.preventDefault();onFormSubmit();">  
+        <input class="controlls" type="text" name="dni" id="dni" placeholder="Enter your dni">
+        <input class="controlls" type="text" name="name" id="name" placeholder="Enter your name">
+        <input class="controlls" type="text" name="father-last-name" id="father-last-name" placeholder="Enter your father lastname">
+        <input class="controlls" type="text" name="mother-last-name" id="mother-last-name" placeholder="Enter your mother lastname">
+        <input class="controlls" type="text" name="telephone" id="telephone" placeholder="Enter your phone number">
+        <input class="controlls" type="text" name="adress" id="adress" placeholder="Enter your adress">
+        <input class="controlls" type="text" name="nickname" id="nickname" placeholder="Enter your nickname">
+        <input class="controlls" type="email" name="email" id="email" placeholder="Enter your email">
+        <input class="controlls" type="password" name="password" id="password" placeholder="Enter your password">
+        <input class="controlls" type="date" name="birthday" id="birthday">
+        <select class="controlls" name="type" id="type">
+          <option value="Admin">Admin</option>
+          <option value="Instructor">Instructor</option>
+        </select>
+        <input class="buttons" id="register-button" type="submit" value="Register">
+      </form>
+    </section>
+  </body>
+  <footer id="main-footer">
+    <p id="p-footer">REGISTER</p>
+  </footer>
+</html>

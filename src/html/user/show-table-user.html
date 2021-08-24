@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users Table</title>
+    <link rel="stylesheet" href="..\..\css/show-table.css"/>
+    <script src = "..\..\javascript/ultil-local-storage.js"></script>
+    <script src = "..\..\javascript/table-user.js"></script>
+  </head>
+  <body onload="updateTableUser()">
+    <h1 id="h1-title">USERS TABLE</h1>
+    <nav class="menu">
+      <div class="options">
+        <a href="..\..\..\index.html">Home</a>
+        <a href="menu-user.html">Menu User</a>
+        <a href="register-user.html">Register User</a>
+      </div>
+    </nav>
+    <div>
+      <table id="user-table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Dni</th>
+            <th>Name</th>
+            <th>Father LastName</th>
+            <th>Mother LastName</th>
+            <th>Telephone</th>
+            <th>Adress</th>
+            <th>Nickname</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Birthday</th>
+            <th>Type</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>000000</td>
+            <td>Miguel</td>
+            <td>Aguilar</td>
+            <td>Paredes</td>
+            <td>77854122</td>
+            <td>B. Galindo km9</td>
+            <td>micky123</td>
+            <td>micky@gmail.com</td>
+            <td>secret1234</td>
+            <td>1990-01-01</td>
+            <td>Admin</td>
+            <td><button onclick="onEdit()" class="buttons">Edit</button></td>
+            <td><button onclick="onDelete()" class="buttons">Delete</button></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </body>
+  <footer id="main-footer">
+    <p id="p-footer">TABLE USERS</p>
+  </footer>
+</html>
